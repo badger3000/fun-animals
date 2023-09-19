@@ -19,7 +19,7 @@ View the [Live preview](https://main--effervescent-seahorse-be858b.netlify.app/)
     Clone the Github Repository [HERE]()
 
     ```shell
-    git clone https://github.com/badger3000/funAnimals.git
+    git clone https://github.com/badger3000/fun-animals.git
     ```
 
 1.  **Navigate to directory and Install dependency.**
