@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@templates/*": ["src/templates/*"],
+      "@pages/*": ["src/pages/*"],
+      "@types/*": ["/types/globalTypes.ts"]
+    }
+  }
+}

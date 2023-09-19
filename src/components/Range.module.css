@@ -1,0 +1,22 @@
+.rangeSlider {
+  @apply bg-gray h-1 block w-full relative;
+}
+.rangeSlider::before {
+  content: "";
+  @apply block absolute top-0 left-0 h-1 bg-yellow w-0 transition-all duration-200 delay-75;
+}
+.rangeSlider.none::before {
+  @apply w-0;
+}
+.rangeSlider.forth::before {
+  @apply w-1/4;
+}
+.rangeSlider.half::before {
+  @apply w-1/2;
+}
+.rangeSlider.third::before {
+  @apply w-3/4;
+}
+.rangeSlider.full::before {
+  @apply w-full;
+}

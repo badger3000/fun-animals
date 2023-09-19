@@ -1,0 +1,15 @@
+.nav {
+  @apply flex flex-row justify-center;
+}
+.navLinks {
+  @apply block mx-2 uppercase text-gray hover:text-black transition-all duration-300;
+}
+/*NOTE: this is just to faking a active state*/
+.nav li:nth-child(3)::after {
+  content: "";
+  @apply block bg-red rounded-full w-[12px] h-[12px] m-auto;
+}
+/*NOTE: this is just to faking a active state*/
+.nav li:nth-child(3) .navLinks {
+  @apply text-black;
+}
