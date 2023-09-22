@@ -18,7 +18,6 @@ const Footer = () => (
       >
         Kyle Ross
       </a>
-      , for Calendly
     </p>
   </footer>
 )

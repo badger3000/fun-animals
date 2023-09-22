@@ -27,7 +27,7 @@ View the [Live preview](https://main--effervescent-seahorse-be858b.netlify.app/)
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd funAnimals/
+    cd fun-animals/
     npm install
 
     ```
