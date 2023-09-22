@@ -10,13 +10,13 @@ Fun Animals Demo Site
 
 Welcome to the Fun Animals Repo. This is a demo project based in [GastbyJS](https://www.gatsbyjs.com/), [ReactJS](https://react.dev/), [TailwindCSS](https://tailwindcss.com/),[TypeScript](https://www.typescriptlang.org/), and [Contentful](https://www.contentful.com/)
 
-View the [Live preview](https://main--effervescent-seahorse-be858b.netlify.app/)
+View the [Live preview](https://main--subtle-capybara-9b1e80.netlify.app/)
 
 ## 🚀 Quick start
 
 1.  **Grab the code.**
 
-    Clone the Github Repository [HERE]()
+    Clone the Github Repository [HERE](https://github.com/badger3000/fun-animals.git)
 
     ```shell
     git clone https://github.com/badger3000/fun-animals.git
