@@ -8,7 +8,7 @@
 Fun Animals Demo Site
 </h1>
 
-Welcome to the Fun Animals Repo. This is a demo project based in [GastbyJS](https://www.gatsbyjs.com/), [ReactJS](https://react.dev/), [TailwindCSS](https://tailwindcss.com/),[TypeScript](https://www.typescriptlang.org/), and [Contentful](https://www.contentful.com/)
+Welcome to the Fun Animals Repo. This is a demo project based in [NextJS](https://nextjs.org/), [ReactJS](https://react.dev/), [TailwindCSS](https://tailwindcss.com/),[TypeScript](https://www.typescriptlang.org/), and [Contentful](https://www.contentful.com/)
 
 View the [Live preview](https://main--subtle-capybara-9b1e80.netlify.app/)
 
@@ -35,7 +35,7 @@ View the [Live preview](https://main--subtle-capybara-9b1e80.netlify.app/)
 1.  **Run Development.**
 
     ```shell
-    npm run start
+    npm run dev
     ```
 
     NOTE: you will need a [Contentful API Key](https://app.contentful.com/spaces/vb3octyohlfd/api/keys) and matching data schema to load items on the frontend. Use the .envEXAMPLE file to get starting adding these keys to your project

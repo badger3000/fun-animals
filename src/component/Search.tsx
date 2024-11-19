@@ -4,7 +4,7 @@ import { Search } from "react-feather"
 const SearchInput = () => {
   const [searchTerm, setSearchTerm] = useState("")
 
-  const handleInputChange = event => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
     // You can also implement any search logic here if needed
   }

@@ -1,27 +1,27 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { MapPin } from "react-feather"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+// import { MapPin } from "react-feather"
+// import Image from "next/image"
 
-const AnimalCard = ({ slug, name, image, breed, origin, shortStory }) => {
+// import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+//{ slug, name, image, breed, origin, shortStory }
+
+const AnimalCard = () => {
   //Grab the image
-  const animalImage = getImage(image)
+  //const animalImage = getImage(image)
 
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: text => <b className="font-bold">{text}</b>,
-    },
-    renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => {
-        return <p className="text-gray truncate">{children}</p>
-      },
-    },
-  }
+  // const options = {
+  //   renderMark: {
+  //     [MARKS.BOLD]: text => <b className="font-bold">{text}</b>,
+  //   },
+  //   renderNode: {
+  //     [BLOCKS.PARAGRAPH]: (node, children) => {
+  //       return <p className="text-gray truncate">{children}</p>
+  //     },
+  //   },
+  // }
   return (
     <figure className="w-full block">
-      <Link
+      This is the Animal card
+      {/* <Link
         to={slug}
         className="block hover:translate-y-[-5px] transition-all duration-300 delay-50 relative hover:drop-shadow-xl h-full"
       >
@@ -40,7 +40,7 @@ const AnimalCard = ({ slug, name, image, breed, origin, shortStory }) => {
           </div>
           <div className="py-2">{renderRichText(shortStory, options)}</div>
         </figcaption>
-      </Link>
+      </Link> */}
     </figure>
   )
 }

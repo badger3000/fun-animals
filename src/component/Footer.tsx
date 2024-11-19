@@ -1,9 +1,9 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import Image from "next/image"
 
 const Footer = () => (
   <footer className="flex flex-row justify-center py-8 text-gray items-center">
-    <StaticImage
+    <Image
       src="../images/website-icon.png"
       width={32}
       height={32}
