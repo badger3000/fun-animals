@@ -1,5 +1,5 @@
 import {contentGqlFetcher} from "./fetch";
-import {Funanimals} from "../types";
+import {Funanimals} from "../../types";
 import {error} from "console";
 
 export const getAnimals = async () => {
