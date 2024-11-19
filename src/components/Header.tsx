@@ -1,6 +1,6 @@
 import Search from "./Search";
 import Navigation from "./Nav";
-// import { MainHeader } from "../types/globalTypes"
+
 export default function Header() {
   const title = "Choose your dog";
   const tagline = "We have the the largest selection of dogs";
