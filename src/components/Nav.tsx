@@ -20,7 +20,7 @@ const Navigation: FC<Nav> = ({
           >
             <button
               className={`block mx-2 uppercase text-gray hover:text-black transition-all duration-300 ${
-                index === 2 ? "text-black" : ""
+                index === 2 ? "!text-black" : ""
               }`}
             >
               {item}
