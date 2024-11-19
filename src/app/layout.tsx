@@ -1,22 +1,27 @@
-import Header from "@/component/Header"
-import Footer from "@/component/Footer"
+import type {Metadata} from "next";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import "./globals.css";
 
-import "./globals.css"
+export const metadata: Metadata = {
+  title: "Fun animals",
+  description: "Demo of NextJS and Contentful",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body>
-        <div className="container px-2 lg:px-0 py-4">
-          <Header />
-          <main className="container">{children}</main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }

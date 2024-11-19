@@ -1,14 +1,14 @@
-import * as React from "react"
-import Image from "next/image"
+import Image from "next/image";
 
 const Footer = () => (
   <footer className="flex flex-row justify-center py-8 text-gray items-center">
     <Image
-      src="../images/website-icon.png"
+      src="/website-icon.png"
       width={32}
       height={32}
       alt="Badger3000"
       className="mr-2"
+      priority={false}
     />
     <p className="mr-2">
       This was made by
@@ -20,6 +20,6 @@ const Footer = () => (
       </a>
     </p>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
