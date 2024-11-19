@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://badger3000.com/">
+    <img alt="Gatsby" src="https://badger3000.com/icons/icon-512x512.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+Fun Animals Demo Site
+</h1>
 
-## Getting Started
+Welcome to the Fun Animals Repo. This is a demo project based in [NextJS](https://nextjs.org/), [ReactJS](https://react.dev/), [TailwindCSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), and [Contentful](https://www.contentful.com/)
 
-First, run the development server:
+View the [Live preview](https://fun-animals.pages.dev/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Quick start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **Grab the code.**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Clone the Github Repository [HERE](https://github.com/badger3000/fun-animals.git)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```shell
+    git clone https://github.com/badger3000/fun-animals.git
+    ```
 
-## Learn More
+1.  **Navigate to directory and Install dependency.**
 
-To learn more about Next.js, take a look at the following resources:
+    Navigate into your new site’s directory and start it up.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```shell
+    cd fun-animals/
+    npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```
 
-## Deploy on Vercel
+1.  **Run Development.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```shell
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    NOTE: you will need a [Contentful API Key](https://app.contentful.com/spaces/vb3octyohlfd/api/keys) and matching data schema to load items on the frontend. Use the .envEXAMPLE file to get starting adding these keys to your project
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+
+<!-- AUTO-GENERATED-CONTENT:END -->
