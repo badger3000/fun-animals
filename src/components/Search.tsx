@@ -1,6 +1,6 @@
 "use client";
 import {useState} from "react";
-
+import {Search} from "lucide-react";
 const SearchInput = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -13,6 +13,7 @@ const SearchInput = () => {
 
   return (
     <label className=" bg-white flex flex-row p-2 lg:w-3/4 lg:m-auto lg:p-4 border-gray-300 shadow-md rounded-xl items-center mb-4 justify-center lg:mb-10">
+      <Search className="stroke-gray" />
       <input
         type="text"
         value={searchTerm}
