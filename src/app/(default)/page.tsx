@@ -4,7 +4,7 @@ export default async function Home() {
   const data = await getAnimals();
   const animals = data.funAnimalsCollection.items;
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 container">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {animals.map((animal) => {
         return (
           <AnimalCard

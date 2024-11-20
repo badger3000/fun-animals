@@ -35,7 +35,7 @@ const AnimalCard = ({
   return (
     <figure className="w-full block">
       <Link
-        href={slug}
+        href={`dog/${slug}`}
         className="block hover:translate-y-[-5px] transition-all duration-300 delay-50 relative hover:drop-shadow-xl h-full"
       >
         <Image

@@ -6,7 +6,8 @@ export type Funanimals = {
       image: {
         url: string;
         title: string;
-        width: string;
+        width: number;
+        height: number;
       };
       friendliness: string;
       lifespan: string;
@@ -15,7 +16,30 @@ export type Funanimals = {
       shedding: string;
       slug: string;
       shortStory: {
-        json: string;
+        json: JSON;
+      };
+    }[];
+  };
+};
+export type SingleFunanimal = {
+  funAnimalsCollection: {
+    items: {
+      breed: string;
+      _id: string;
+      image: {
+        url: string;
+        title: string;
+        width: number;
+        height: number;
+      };
+      friendliness: string;
+      lifespan: string;
+      name: string;
+      origin: string;
+      shedding: string;
+      slug: string;
+      shortStory: {
+        json: JSON;
       };
     }[];
   };
