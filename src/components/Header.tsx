@@ -1,9 +1,17 @@
+"use client";
 import Search from "./Search";
 import Navigation from "./Nav";
+import {usePathname} from "next/navigation";
 
 export default function Header() {
   const title = "Choose your dog";
   const tagline = "We have the the largest selection of dogs";
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
+  if (!isHomePage) {
+    return null;
+  }
   return (
     <header className="flex flex-col m-auto text-center mb-8 container px-2 lg:px-0 py-4">
       <Search />
