@@ -14,6 +14,9 @@ export type Funanimals = {
       origin: string;
       shedding: string;
       slug: string;
+      shortStory: {
+        json: string;
+      };
     }[];
   };
 };

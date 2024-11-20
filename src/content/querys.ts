@@ -20,6 +20,9 @@ export const getAnimals = async () => {
           origin
           shedding
           slug
+          shortStory {
+            json
+          }
         }
       }
     }

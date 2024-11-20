@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {MapPin} from "react-feather";
 //import {BLOCKS, MARKS} from "@contentful/rich-text-types";
 
 interface AnimalCardProps {
@@ -49,10 +50,11 @@ const AnimalCard = ({
             <h2 className="text-2xl text-bold">{breed}</h2>
             <div className="flex flex-row">
               <p>{origin}</p>
-              {/* <MapPin className=" stroke-blue ml-2" /> */}
+
+              <MapPin className=" stroke-blue ml-2" />
             </div>
           </div>
-          <div className="py-2">{shortStory}</div>
+          <div className="py-2 text-gray truncate">{shortStory}</div>
         </figcaption>
       </Link>
     </figure>
