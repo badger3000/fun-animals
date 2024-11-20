@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {MapPin} from "lucide-react";
+import {documentToReactComponents} from "@contentful/rich-text-react-renderer";
 //import {BLOCKS, MARKS} from "@contentful/rich-text-types";
 
 interface AnimalCardProps {
@@ -9,7 +10,7 @@ interface AnimalCardProps {
   image: string; // or define a more specific type for image
   breed: string;
   origin: string;
-  shortStory: string; // or define a more specific type for shortStory
+  shortStory: JSON; // or define a more specific type for shortStory
 }
 const AnimalCard = ({
   slug,
@@ -53,7 +54,9 @@ const AnimalCard = ({
               <MapPin className=" stroke-blue ml-2" />
             </div>
           </div>
-          <div className="py-2 text-gray truncate">{shortStory}</div>
+          <div className="py-2 text-gray truncate">
+            {documentToReactComponents(shortStory)}
+          </div>
         </figcaption>
       </Link>
     </figure>
