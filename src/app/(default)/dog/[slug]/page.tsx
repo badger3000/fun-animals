@@ -3,7 +3,7 @@ import Link from "next/link";
 import {ArrowLeft, Heart, MapPin} from "lucide-react";
 import {getAnimalsPost} from "@/content/querys";
 import {documentToReactComponents} from "@contentful/rich-text-react-renderer";
-
+export const runtime = "edge";
 export default async function AnimialSingle({
   params,
 }: {
