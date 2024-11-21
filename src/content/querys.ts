@@ -1,6 +1,6 @@
 import {contentGqlFetcher} from "./fetch";
 import {Funanimals, SingleFunanimal} from "../../types";
-import {error} from "console";
+
 export const getAnimalsPost = async (slug: string) => {
   const query = `#graphql
   query Funanimals($where: FunAnimalsFilter) {
@@ -32,7 +32,7 @@ export const getAnimalsPost = async (slug: string) => {
     variables: {where: {slug}},
   });
   if (!data) {
-    throw error("no single post for animal");
+    throw new Error("no single post for animal");
   }
   return data;
 };
@@ -61,7 +61,7 @@ export const getAnimals = async () => {
   `;
   const data = await contentGqlFetcher<Funanimals>({query});
   if (!data) {
-    throw error("no animals");
+    throw new Error("no animals");
   }
   return data;
 };
